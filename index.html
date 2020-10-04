@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora Simples</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="principal">
+        <div id="screen">
+            <span id="resultado"></span>
+            <span id="calculo"></span>
+        </div>
+        <table cellspacing="5">
+            <tr>
+                <td class="color_gray-white" onclick="clearAll()">C</td>
+                <td class="color_gray-white" onclick="deletar()">DEL</td>
+                <td class="color_gray-white" onclick="sinal_dividir()">/</td>
+                <td class="color_gray-white" onclick="sinal_vezes()">x</td>
+            </tr>
+            <tr>
+                <td class="color_azure" onclick="addResultado(7)">7</td>
+                <td class="color_azure" onclick="addResultado(8)">8</td>
+                <td class="color_azure" onclick="addResultado(9)">9</td>
+                <td class="color_gray-white" onclick="sinal_menos()">-</td>
+            </tr>
+            <tr>
+                <td class="color_azure" onclick="addResultado(4)">4</td>
+                <td class="color_azure" onclick="addResultado(5)">5</td>
+                <td class="color_azure" onclick="addResultado(6)">6</td>
+                <td class="color_gray-white" onclick="sinal_mais()">+</td>
+            </tr>
+            <tr>
+                <td class="color_azure" onclick="addResultado(1)">1</td>
+                <td class="color_azure" onclick="addResultado(2)">2</td>
+                <td class="color_azure" onclick="addResultado(3)">3</td>
+                <td class="color_orange" rowspan="2" onclick="calcular()">=</td>
+            </tr>
+            <tr>
+                <td colspan="2" style="background-color: azure;" onclick="addResultado(0)">0</td>
+                <td style="background-color: azure;" onclick="sinal_ponto()">.</td>
+            </tr>
+        </table>
+    </div>
+
+    <script link="script" src="scriptCalculator.js"></script>
+</body>
+</html>
